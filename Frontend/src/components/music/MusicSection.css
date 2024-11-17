@@ -1,0 +1,144 @@
+.music-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff5f8;
+}
+
+.music-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #f48fb1;
+  background: white;
+  color: #f48fb1;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.category-btn:hover,
+.category-btn.active {
+  background: #f48fb1;
+  color: white;
+}
+
+.music-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.music-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.music-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.music-card-header h3 {
+  color: #f48fb1;
+  margin: 0;
+}
+
+.duration {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.description {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.benefits {
+  background: #fff5f8;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.benefits h4 {
+  color: #f48fb1;
+  margin: 0 0 0.5rem 0;
+}
+
+.play-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #f48fb1;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.play-btn:hover {
+  background: #e91e63;
+}
+
+.music-tips {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.music-tips h2 {
+  color: #f48fb1;
+  margin-bottom: 1rem;
+}
+
+.music-tips ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.music-tips li {
+  color: #666;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.music-tips li:before {
+  content: "♪";
+  color: #f48fb1;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .category-buttons {
+    flex-direction: column;
+  }
+
+  .category-btn {
+    width: 100%;
+  }
+
+  .music-list {
+    grid-template-columns: 1fr;
+  }
+}
