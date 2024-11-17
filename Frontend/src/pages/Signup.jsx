@@ -19,12 +19,11 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-  `${process.env.REACT_APP_BACKEND_URL}/api/auth/signup`,
-  {
-    username,
-    password,
-  }
-);
+        `${process.env.REACT_APP_BACKEND_URL}/api/auth/signup`,
+        {
+          username,
+          password,
+        }
       );
 
       if (response.data) {
