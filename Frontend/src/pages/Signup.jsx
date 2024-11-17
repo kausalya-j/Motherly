@@ -19,7 +19,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        `${"https://motherly.onrender.com"}/api/auth/signup`,
+        `https://motherly.onrender.com/api/auth/signup`,
         {
           username,
           password,
